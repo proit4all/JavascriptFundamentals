@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="openWindow()">Open Window</button>
+    <button type="button" onclick="closeWindow()">Close window</button>
+    <button type="button" onclick="moveToWindow()">Move to</button>
+    <button type="button" onclick="resizeToWindow()">resize to</button>
+    <script>
+      //   window.alert("Hello");
+      //   window.confirm("Are you sure to exit?");
+      //   window.prompt("Enter data: ");
+      //   prompt();
+      function openWindow() {
+        open("http://google.com", "_blank");
+      }
+      function closeWindow() {
+        close();
+      }
+      function moveToWindow() {
+        console.log("first");
+        moveTo(50, 50);
+      }
+      function resizeToWindow() {
+        resizeTo(300, 300);
+      }
+    </script>
+  </body>
+</html>

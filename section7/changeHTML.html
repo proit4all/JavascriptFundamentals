@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //javascript
+      function change() {
+        let element = document.getElementById("heading");
+        element.innerHTML = "Hello to <i>DOM</i>";
+      }
+      function changeOuter() {
+        let element = document.getElementById("outer");
+        element.outerHTML = "Hello to <i>DOM</i>. This is my outer HTML";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="heading">Welcome to DOM</h1>
+    <h1 id="outer">Welcome to Outer HTML</h1>
+    <button type="button" onclick="change()">Change HTML</button>
+    <button type="button" onclick="changeOuter()">Change Outer HTML</button>
+  </body>
+</html>

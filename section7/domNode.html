@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM Nodes</title>
+  </head>
+  <body>
+    <main>
+      <h1>Javascript BAsics</h1>
+      <p>Functions</p>
+      <p>DOM Nodes</p>
+    </main>
+    <script>
+      let root = document.documentElement;
+
+      console.log(root.nodeName);
+      console.log(root.firstChild);
+      console.log(root.lastChild);
+      console.log(root.lastChild.firstChild.nextSibling.childNodes[1]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="form">
+      <label>
+        Number 1:
+        <input type="number" name="number1" value="0" />
+      </label>
+      <br /><br />
+      <label>
+        Number 2:
+        <input type="number" name="number2" value="0" />
+      </label>
+      <br /><br />
+      <input type="button" value="+" onclick="add()" />
+      <input type="button" value="-" onclick="sub()" />
+      <input type="button" value="*" onclick="mult()" />
+      <input type="button" value="/" onclick="divide()" />
+      <hr />
+      <h1 id="result">90</h1>
+    </form>
+    <script src="js/calc.js"></script>
+  </body>
+</html>

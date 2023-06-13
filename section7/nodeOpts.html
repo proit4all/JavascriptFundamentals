@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="main"></main>
+    <button type="button" onclick="updateElement()">Update</button>
+    <button type="button" onclick="deleteElement()">Delete</button>
+    <script>
+      function updateElement() {
+        let main = document.getElementById("main");
+        let h1 = document.querySelector("h1");
+
+        let h2 = document.createElement("h2");
+        let textH2 = document.createTextNode("This is a new Text");
+        h2.appendChild(textH2);
+
+        main.replaceChild(h2, h1);
+      }
+      function deleteElement() {
+        let h2 = document.querySelector("h2");
+
+        h2.remove();
+      }
+      let main = document.getElementById("main");
+
+      let h1 = document.createElement("h1");
+      let textNode = document.createTextNode("Welcome to Javascript");
+
+      h1.appendChild(textNode);
+
+      main.appendChild(h1);
+
+      let p = document.createElement("p");
+      let textP = document.createTextNode("DOM Nodes");
+
+      p.appendChild(textP);
+      main.appendChild(p);
+    </script>
+  </body>
+</html>

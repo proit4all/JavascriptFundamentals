@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="clock">Clock</h1>
+
+    <button type="button" onclick="stopClock()">Stop</button>
+    <script>
+      let handle = setInterval(displayClock, 1000);
+
+      let h1 = document.getElementById("clock");
+      function displayClock() {
+        h1.innerHTML = new Date();
+      }
+
+      function stopClock() {
+        clearInterval(handle);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="cookie">cookie</h1>
+    <button type="button" onclick="createCookie()">Create</button>
+    <button type="button" onclick="readCookie()">Read</button>
+    <button type="button" onclick="deleteCookie()">Delete</button>
+    <script>
+      function createCookie() {
+        document.cookie = "username=anhnn";
+      }
+      function readCookie() {
+        let h1 = document.getElementById("cookie");
+
+        let username = document.cookie;
+
+        h1.innerHTML = username;
+      }
+      function deleteCookie() {
+        document.cookie =
+          "username=anhnn; expires=Wed, 7 Jun 2023 12:00:00 UTC";
+      }
+    </script>
+  </body>
+</html>

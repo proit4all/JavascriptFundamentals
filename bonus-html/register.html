@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <hr />
+    <form action="">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter username"
+        required
+        maxlength="5"
+        minlength="2"
+      />
+      <br /><br />
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter name" />
+      <br /><br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <br /><br />
+      <label for="email">Email</label>
+      <input type="email" id="email" />
+      <br /><br />
+      <label for="tel">Phone:</label>
+      <input type="tel" id="tel" />
+      <br /><br />
+      <label for="dob">Date of birth: </label>
+      <input type="date" name="dob" id="dob" />
+      <br /><br />
+      <label for="">Gender:</label>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="m" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="f" />
+      <br /><br />
+      <label for="">Favorites:</label>
+
+      <input type="checkbox" name="movie" id="movie" />
+      <label for="movie">Movie</label>
+      <input type="checkbox" name="football" id="football" />
+      <label for="football">Football</label>
+      <br /><br />
+      <label for="salary">Salary</label>
+      <input type="number" name="salary" id="salary" />
+      <br /><br />
+      <input type="hidden" name="secret" value="abc" />
+      <label for="image">Image:</label>
+      <input type="file" id="image" />
+      <br /><br />
+      <label for="description">Description</label>
+      <br />
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="5"
+      ></textarea>
+      <br /><br />
+      <label for="nationality">Nationality:</label>
+      <select name="nationality" id="nationality" size="5" multiple>
+        <option value="vn">Vietnam</option>
+        <option value="jp">Japan</option>
+        <option value="la">Laos</option>
+        <option value="us">US</option>
+        <option value="cn">China</option>
+        <option value="uk">UK</option>
+        <option value="cb">Cambodia</option>
+      </select>
+      <br /><br />
+
+      <input type="submit" value="Register" />
+      <input type="reset" value="reset" />
+      <input type="image" src="./imgs/search-icon.png" width="30" alt="" />
+
+      <br /><br /><br /><br /><br />
+    </form>
+  </body>
+</html>

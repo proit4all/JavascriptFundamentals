@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Welcome to Events</h1>
+    <button type="button" onclick="toggle()">Toggle</button>
+    <button type="button" id="newToggle">New Toggle</button>
+    <script>
+      function toggle() {
+        const element = document.getElementById("heading");
+
+        if (element.style.color === "red") element.style.color = "blue";
+        else element.style.color = "red";
+      }
+      const button = document.getElementById("newToggle");
+      button.onclick = toggle;
+    </script>
+  </body>
+</html>

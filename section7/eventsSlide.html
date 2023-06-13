@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      id="image"
+      src="images/rose1.jpg"
+      alt=""
+      onmouseover="swap('/images/rose2.jpg')"
+      onmouseout="swap('/images/rose1.jpg')"
+      height="200"
+      width="auto"
+    />
+    <script>
+      function swap(imageUrl) {
+        const img = document.getElementById("image");
+
+        img.src = imageUrl;
+      }
+    </script>
+  </body>
+</html>

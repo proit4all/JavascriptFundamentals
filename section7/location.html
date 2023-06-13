@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="form">
+      <input type="text" name="url" />
+      <input type="button" onclick="load()" value="Load" />
+      <input type="button" onclick="refresh()" value="Refresh" />
+      <p>
+        <script>
+          document.write(new Date());
+        </script>
+      </p>
+    </form>
+    <script>
+      function load() {
+        let url = document.form.url.value;
+
+        location.assign(url);
+      }
+      function refresh() {
+        location.reload();
+      }
+
+      console.log(location.host);
+      console.log(location.hostname);
+      console.log(location.href);
+      console.log(location.origin);
+    </script>
+  </body>
+</html>

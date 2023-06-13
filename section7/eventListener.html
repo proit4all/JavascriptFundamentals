@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="sayHello()">Hello</button>
+    <button type="button" id="welcome">Welcome</button>
+
+    <script>
+      function sayHello() {
+        alert("Hello");
+      }
+      function sayWelcome() {
+        alert("Welcome to Event Listener");
+      }
+      var welcome = document.getElementById("welcome");
+
+      welcome.addEventListener("click", sayWelcome);
+      welcome.addEventListener("mouseover", function () {
+        welcome.style.color = "red";
+      });
+      welcome.addEventListener("mouseout", function () {
+        welcome.style.color = "blue";
+      });
+    </script>
+  </body>
+</html>
