@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tính trung bình cộng từ Min đến Max</h2>
+    <script>
+
+        // Tính trung bình cộng các số tự nhiên chia hết cho 2 từ min đến max
+        // Khai báo 2 giá trị min và max
+        // Cho vòng lặp while chạy từ min đến max
+        //     Nếu số chia hết cho 2
+        //     Tính tổng 
+        //     Tăng biến đếm lên 1
+        // In ra kết quả: TBC = tổng/đếm
+
+        let min = 2;
+        let max = 6;
+        let sum = 0;
+        let count = 0;
+        //dung vòng lặp while
+        let number = min;
+        while (number <= max) {
+            if (number % 2 == 0) {
+                // document.writeln("number: "+ number +"<br/>");
+                sum = sum + number;
+                count++;
+            }
+            
+            number++;
+        }
+        document.write("Sum: "+ sum +"<br/>");
+        document.write("Count: "+ count +"<br/>");
+        document.write("Trung bình cộng: "+(sum/count));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Giải phương trình</h2>
+    <script>
+      // Giải phương trình bậc 2: Ax^2 +  Bx + C = 0
+      // Nếu A = 0
+      // Giải phương trình bậc 1: Bx + C = 0
+      // Nếu A != 0
+      // Giải phương trình bậc 2
+
+      let numberA = prompt("input number a: ");
+      let numberB = prompt("input number b: ");
+      let numberC = prompt("input number c: ");
+      if (numberA === 0) {
+        document.write("Giai phương trình bậc 1 <br/>");
+        if (numberB != 0) {
+          //nghiem
+          let result = -numberC / numberB;
+          document.writeln("Phương trình có 1 nghiệm duy nhất là X= " + result +"<br/>");
+        } else {
+          //numberB == 0
+          if (numberC === 0) {
+            document.write("Phương trình vô số nghiệm <br/>");
+          } else {
+            document.write("Phương trình vô nghiệm <br/>");
+          }
+        }
+      } else {
+        document.write("Giải phương trình bậc 2 <br/>");
+        let delta = numberB * numberB - 4 * numberA * numberC;
+        document.writeln("Delta: "+delta +"<br/>");
+        if (delta < 0) {
+            document.write("phương trình vô nghiệm <br/>");
+        } else if (delta ===0) {
+            document.writeln("phương trình có 1 nghiệm kép <br/>");
+            document.writeln("Nghiệm chương trình X= "+ (-numberB/(2*numberA)))
+
+        } else {
+            document.write("<h1>Phương trình có 2 nghiệm phân biệt</h1>");
+            let x1 = -numberB + Math.sqrt(delta/(2 * numberA));
+            let x2 = -numberB - Math.sqrt(delta/(2 * numberA));
+            document.write("Nghiệm X1: "+ x1 +"<br/>");
+            document.write("Nghiệm X2: "+ x2 +"<br/>");
+        }
+      }
+
+    </script>
+  </body>
+</html>

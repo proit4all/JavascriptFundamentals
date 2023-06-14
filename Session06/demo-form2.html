@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="my_form" class="my-form">
+        <input type="text" name="firstname" placeholder="firstname" autocomplete="off"><br>
+        <input type="text" name="lastname" placeholder="lastname" autocomplete="off"><br>
+        <button type="button" onclick="sendInfor()">Submit</button>
+    </form>
+    <script>
+        function sendInfor() {
+            // let form = document.getElementById("my_form").elements;
+            let form = document.querySelector(".my-form");
+            console.log(form[0].value);
+            console.log(form["firstname"].value);
+            console.log(form["lastname"].value);
+        }
+    </script>
+</body>
+</html>

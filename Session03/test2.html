@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const now = new Date();
+        //ngày tháng hiện tại: Wed May 31 2023 17:40:51 GMT+0700 
+        console.log(now);
+        //kiểu dữ liệu object
+        console.log(typeof now);
+        //lấy ra năm 2023
+        console.log(now.getFullYear());
+        //lấy ra tháng 4
+        console.log(now.getMonth());
+        //lấy ra ngày trong tháng 31
+        console.log(now.getDate());
+        //lấy ra ngày trong tuần 3
+        console.log(now.getDay());
+
+        //lấy ra giờ 17
+        console.log(now.getHours());
+        //in ra phút 40
+        console.log(now.getMinutes());
+        //in ra giây 51
+        console.log(now.getSeconds());
+        //in ra Wed May 31 2023
+        console.log(now.toDateString());
+        //in ra 17:40:51 GMT+0700
+        console.log(now.toTimeString());
+        //5/31/2023, 5:40:51 PM
+        console.log(now.toLocaleString());
+        //5/31/2023
+        console.log(now.toLocaleDateString());
+        //5:40:51 PM
+        console.log(now.toLocaleTimeString());
+
+
+        console.log("-----------------");
+        var mydate = new Date('Wed May 30 2023 18:50:51 GMT+0700');
+        // console.log(mydate.toLocaleDateString());
+        // console.log(mydate.getMonth());
+        // console.log(mydate.getDate());
+        // console.log(mydate.getDay());
+        let _nowTime = now.getTime();
+        let _lastTime = mydate.getTime();
+        //
+        let gap = _nowTime - _lastTime;
+        var diff = now.getTime() - mydate.getTime(); 
+        var daydiff = diff / (1000 * 60 * 60 * 24);
+
+        // let timeInfor = Math.round(gap/1000/60/60/24);
+        console.log(daydiff);
+    </script>
+</body>
+</html>

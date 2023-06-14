@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let date = new Date();
+        console.log(date);
+        console.log(date.toLocaleDateString());
+        console.log(date.toLocaleTimeString());
+
+        let nowTime = date.getTime();
+        console.log(nowTime);
+
+        // date.setDate(06);
+        // date.setMonth(04);
+        // date.setFullYear(2023);
+        // console.log(date);
+        // console.log(date.toLocaleDateString());
+        // date.setHours(15);
+        // date.setMinutes(05);
+        // date.setSeconds(05);
+        // console.log(date.toLocaleTimeString());
+        // //
+        // date = new Date('2023,05,31')
+        // console.log(date.toLocaleDateString());
+
+        date = new Date("05/30/2023");
+        console.log(date.toLocaleDateString());
+        console.log(date);
+        let oldTime = date.getTime();
+        console.log(oldTime);
+
+        let gap = nowTime - oldTime;
+        console.log(Math.round(gap/1000/60/60/24));
+
+    </script>
+</body>
+</html>

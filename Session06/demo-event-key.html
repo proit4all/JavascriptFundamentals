@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="my-form">
+        <input type="text" name="name" placeholder="input name" autocomplete="off">
+    </form>
+    <script>
+        const form = document.querySelector(".my-form");
+        form.name.addEventListener("keyup",(event)=>{
+            console.log("keyup:"+event.target.value);
+            console.log("keyup:"+event.key);
+        });
+        form.name.addEventListener("keydown",(event)=>{
+            console.log("keydown:"+event.target.value);
+            console.log("keydown:"+event.key);
+        });
+        form.name.addEventListener("keypress",(event)=>{
+            console.log("keypress:"+event.target.value);
+            console.log("keypress:"+event.key);
+        });
+    </script>
+</body>
+</html>

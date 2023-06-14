@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="my-form">
+        <input type="text" name="firstname" placeholder="firstname" autocomplete="off"><br>
+        <input type="text" name="lastname" placeholder="lastname" autocomplete="off"><br>
+       <input type="submit" value="Submit">
+    </form>
+    <script>
+        const form = document.querySelector(".my-form");
+        form.addEventListener("submit", event=>{
+            //ngăn chặn cách xử lý mặc định của trình duyệt khi xảy ra sự kiện
+            event.preventDefault();
+            console.log(form["firstname"].value);
+            console.log(form["lastname"].value);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Giải phương trình bậc 2</h2>
+    <script>
+        // Giải phương trình bậc 2: Ax^2 +  Bx + C = 0
+        // Khai báo 3 biến A, B, C
+        // Tính delta = B* B – 4 * A * C
+        // Nếu delta < 0 in ra phương trình vô nghiệm
+        // Nếu delta = 0 in ra phương trình có nghiệm kép
+        // X1 = -B/(2*A)
+        // Nếu delta > 0 in ra phương trình có 2 nghiệm phân biệt
+        // X1 = (- B + sqrt(delta))/(2*A) 
+        // X2 = (- B - sqrt(delta))/(2*A) 
+        let numberA = 1;
+        let numberB = 4;
+        let numberC = -4;
+        let delta = numberB * numberB - 4 * numberA * numberC;
+        document.writeln("Delta: "+delta);
+        if (delta < 0) {
+            document.write("phương trình vô nghiệm");
+        } else if (delta ===0) {
+            document.writeln("phương trình có 1 nghiệm kép");
+            document.writeln("Nghiệm chương trình X= "+ (-numberB/(2*numberA)))
+
+        } else {
+            document.write("<h1>Phương trình có 2 nghiệm phân biệt</h1>");
+            let x1 = -numberB + Math.sqrt(delta/(2 * numberA));
+            let x2 = -numberB - Math.sqrt(delta/(2 * numberA));
+            document.write("Nghiệm X1: "+ x1);
+            document.write("Nghiệm X2: "+ x2);
+        }
+    </script>
+</body>
+</html>

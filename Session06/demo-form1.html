@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="fullname" placeholder="full name">
+        <p>
+            <input type="checkbox" name="foods" value="cake"> i like cake
+        </p>
+        <p>
+            <input type="checkbox" name="foods" value="pizza"> i like pizza
+        </p>
+        <p>
+            <input type="checkbox" name="foods" value="icecream"> i like ice cream
+        </p>
+        <button type="button" onclick="sendInfor()">Submit</button>
+    </form>
+    <script>
+        function sendInfor() {
+            // alert("hi");
+            let fullname = document.getElementById("fullname").value;
+            console.log(fullname);
+            let foods = document.getElementsByName("foods");
+            for(let i = 0 ; i < foods.length; i++){
+                if (foods[i].checked) {
+                    console.log(foods[i].value);
+                }
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>

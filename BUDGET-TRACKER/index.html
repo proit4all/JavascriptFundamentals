@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Basic</title>
+</head>
+<body>
+    <main>
+        <article>
+            <section class="header">
+                <p class="title">BUDGET TRACKER</p>
+            </section>
+            <section class="transaction-main">
+                <div class="add-box">
+                    <h3>Add Transaction</h3>
+                    <form class="add">
+                        <input type="text" name="source" id="" placeholder="Source" autocomplete="off">
+                        <input type="number" name="amount" placeholder="Amount" autocomplete="off">
+                        <input type="submit" value=" Add Transaction">
+                    </form>
+                </div>
+                <div class="stats-box">
+                    <h3>Statistics</h3>
+                    <p class="balance">
+                        Balance: <span id="balance"></span>đ
+                    </p>
+                    <p class="income">
+                        Income: <span id="income"></span>đ
+                    </p>
+                    <p class="expense">
+                        Expense: <span id="expense"></span>đ
+                    </p>
+                </div>
+            </section>
+            <section class="transaction-history">
+                <h3>Transaction History</h3>
+                <div class="records-box">
+                    <div class="income">
+                        <h3>Income</h3>
+                        <ul class="income-list">
+                            
+                        </ul>
+                    </div>
+                    <div class="expense">
+                        <h3>Expense</h3>
+                        <ul class="expense-list">
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+        </article>
+    </main>
+<script src="index.js"></script>
+</body>
+</html>
